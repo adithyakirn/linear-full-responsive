@@ -1,4 +1,18 @@
+@media (max-width: 1024px) {
+    .footer-inner-container {
+        grid-template-columns: auto repeat(5, minmax(0,1fr));
+    }
+    .footer-section-contents{
+        font-size: 13px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+    }
+}
 @media (max-width: 768px) {
+    .footer-logo-container{
+        grid-row: 1 / 1;
+        grid-column: 1 / -1;
+    }
     .nav-container {
         flex-direction: column;
     }
@@ -36,6 +50,36 @@
         margin-left: 64px;
         max-width: 70vw;
     }
+    .issue-section-image{
+        max-width: none;
+        width: 250vw;
+        margin-left: 30vw;
+    }
+    .build-next-section-image img{
+        max-width: none;
+        width: 250%;
+        height: auto;
+        margin-left: -100%;
+    }
+    .individual-collaborate-scroller{
+        padding: 24px;
+    }
+    .collaborate-scroller-footer-container{
+        max-width: none;
+    }
+    .footer-header{
+        margin-bottom: 16px;
+    }
+    .footer-list-content{
+        white-space: normal;
+    }
+    @media (max-width: 768px) {
+     .footer-inner-container {
+        column-gap: 16px;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        grid-template-rows: auto repeat(3, auto);
+    }
+    }
 }
 @media (max-width: 640px) {
     .tab-desktop-show{
@@ -68,6 +112,17 @@
     .build-next-benifits-logotext-container{
         flex-direction: column;
     }
+    .tracking-section{
+        padding: 48px 0;
+    }
+    .issue-section-images-wrapper::after{
+    margin-bottom: -20%;
+    }
+    .strong-foundation-text-content{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 @media (prefers-reduced-motion: no-preference) {
     .scrolling-content {
@@ -81,4 +136,13 @@
     100% { 
     transform: translateX(-100%);
     }
+}
+@keyframes verification-rotate {
+    0% {
+    transform: rotate(0turn);
+}
+
+100% {
+    transform: rotate(1turn);
+}
 }
