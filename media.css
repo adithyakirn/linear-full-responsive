@@ -14,7 +14,7 @@
   .only-show-desktop {
     display: none;
   }
-  .set-product-page-section{
+  .set-product-page-section {
     gap: 0;
   }
 }
@@ -368,7 +368,11 @@
   .product-section-image {
     height: auto;
     width: 1600px;
-    mask: radial-gradient(57% 57% at 50% 35%,#d9d9d9 0,hsla(0,0%,45%,0) 100%);
+    mask: radial-gradient(
+      57% 57% at 50% 35%,
+      #d9d9d9 0,
+      hsla(0, 0%, 45%, 0) 100%
+    );
   }
   .section-images-wrapper::before {
     margin-top: -8%;
@@ -405,7 +409,7 @@
   .footer-header,
   .footer-list-container {
     font-size: 14px;
-    font-weight: 400;
+    letter-spacing: -.182px;
   }
   .section-footer-grid-container {
     border-top: 2px solid hsla(0, 0%, 100%, 0.05);
@@ -523,7 +527,8 @@
     inset: 0;
     overflow: hidden;
   }
-  .product-page-section-container, .set-product-page-section {
+  .product-page-section-container,
+  .set-product-page-section {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     display: grid;
     grid-template-areas: var(--grid-area);
@@ -557,7 +562,8 @@
     margin-top: -140px;
   }
   .product-page-section-text-container,
-  .product-page-section-container, .set-product-page-section {
+  .product-page-section-container,
+  .set-product-page-section {
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -567,9 +573,6 @@
   .set-page-section-text-container {
     margin: 0 auto;
     max-width: 1024px;
-  }
-  .individual-scroller_collaborate-section::before {
-    min-width: 200px;
   }
   .footer-inner-container {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -594,7 +597,7 @@
     grid-column: 1 / span 6;
   }
   .individual-scroller_collaborate-section::before {
-    min-width: 16px;
+    min-width: max(calc(calc((100vw - 1024px) / 2) - 8px), calc(max(env(safe-area-inset-left), 24px) - 8px));
   }
   .build-future-page-section-container {
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -603,9 +606,5 @@
   }
   .build-future-button-container {
     justify-content: flex-end;
-  }
-  .footer-header,
-  .footer-list-container {
-    font-weight: 510;
   }
 }

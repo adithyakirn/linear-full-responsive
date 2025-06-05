@@ -136,7 +136,6 @@ li {
 }
 .nav-item-default {
   display: flex;
-  /* justify-content: flex-start; */
   white-space: nowrap;
   margin: 0;
 }
@@ -229,7 +228,6 @@ li {
   width: 1px;
   user-select: none;
   margin-top: var(--marg-height);
-  margin-left: calc(var(--marg-width, 0px) - 1px);
 }
 .project-longterm-container {
   display: flex;
@@ -881,8 +879,18 @@ li {
   border: 1px solid hsla(0, 0%, 100%, 0.1);
   padding: 16px;
 }
+.noti-card-content-3:hover{
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(180px) translateX(7%) translateY(-35%);
+}
+.noti-card-content-2:hover{
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(0) translateX(10%) translateY(-45%);
+}
+.noti-card-content:hover{
+    transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg)
+    translateZ(calc(-1 * 180px)) translateX(calc(10% + 3%)) translateY(-55%);
+}
+
 .notification-card-content {
-  filter: grayscale(1);
   transition: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-property: opacity;
 }
@@ -1259,6 +1267,7 @@ li {
 .triage-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  line-clamp: 1;
   -webkit-line-clamp: 1;
   overflow: hidden;
   overflow-wrap: anywhere;
