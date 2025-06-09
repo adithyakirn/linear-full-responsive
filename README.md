@@ -11,7 +11,7 @@ Check out the live site here:
 
 - **HTML** – Structure
 - **CSS** – Styling and responsiveness
-- **JavaScript** – Basic interactivity and Animation
+- **JavaScript** – For Animation
 
 ## 📁 Project Structure
 
@@ -19,5 +19,5 @@ Check out the live site here:
 ├── index.html         # Main HTML file
 ├── style.css          # Core styling
 ├── media.css          # Responsive media queries
-├── script.js          # JS for any interactivity
-├── Assets/            # Images and other static assets
+├── script.js          # JS for Animations
+├── Assets/            # Fonts and other files
