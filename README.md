@@ -11,7 +11,7 @@ Check out the live site here:
 
 - **HTML** – Structure
 - **CSS** – Styling and responsiveness
-- **JavaScript** – Basic interactivity
+- **JavaScript** – Basic interactivity and Animation
 
 ## 📁 Project Structure
 
